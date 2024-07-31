@@ -1,33 +1,393 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --blue: #2980b9;
+    --black: #333;
+    --white: #fff;
+    --light-color: #777;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    transition: all .2s linear;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html::-webkit-scrollbar {
+    width: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+html::-webkit-scrollbar-track {
+    background: var(--blue);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 50px;
+}
+
+.container_1 {
+    padding: 100px 9%;
+    background: linear-gradient(45deg, deeppink, var(--blue));
+    display: flex;
+    gap: 20px;
+
+}
+
+/* describe */
+
+.container_1 .describe {
+    flex: 1 1 400px;
+    background: var(--white);
+    padding: 20px 20px;
+    text-align: center;
+    top: 20px;
+    left: 0;
+    border-right: 2px solid var(--black);
+    align-self: flex-start;
+    border-radius: 40px;
+
+}
+
+.container_1 .describe .profile_first a:hover {
+    background: var(--blue);
+    color: var(--pink);
+    box-shadow: var(--box-shadow);
+}
+
+.container_1 .describe {
+    flex: 1 1 400px;
+    background: var(--white);
+    padding: 20px 30px;
+    text-align: center;
+    top: 20px;
+    left: 0;
+    border-right: 2px solid var(--black);
+    align-self: flex-start;
+    border-radius: 40px;
+
+}
+
+.container_1 .describe .image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container_1 .describe h3 {
+    color: var(--black);
+    font-size: 20px;
+}
+
+.container_1 .describe p {
+
+    padding: 15px 0;
+    font-size: 19px;
+}
+
+.container_1 .describe .share div {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.container_1 .describe .share .github {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+
+}
+
+.container_1 .describe .share .github:hover {
+    background: var(--blue);
+    color: var(--pink);
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+
+}
+
+.container_1 .describe .share .line {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+
+}
+
+.container_1 .describe .share .line:hover {
+    background: var(--blue);
+    color: var(--pink);
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+}
+.container_1 .describe .share svg {
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.container_1 .describe .share a {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: var(--black);
+
+}
+
+
+.container_1 .describe .share a:hover {
+    background: var(--blue);
+    color: var(--pink);
+    box-shadow: var(--box-shadow);
+}
+
+/* information */
+
+
+.container_1 .information {
+    flex: 1 1 1000px;
+    background: var(--white);
+    padding: 20px 30px;
+    border-radius: 40px;
+
+}
+
+.container_1 .information .about p {
+    font-size: 17px;
+    line-height: 2;
+    padding-bottom: 10px;
+    color: var(--light-color);
+}
+
+.container_1 .information .about .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .about .box-container .box {
+    flex: 1 1 250px;
+}
+
+.container_1 .information .about .box-container .box h3 {
+    font-size: 15px;
+    padding: 10px 0;
+    color: var(--black);
+}
+
+.container_1 .information .about .box-container .box h3 span {
+    color: var(--light-color);
+}
+
+.container_1 .information .skills .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .skills .box-container .box {
+    flex: 1 1 300px;
+}
+
+/* experience */
+
+.container_1 .information .experience {
+    margin: 20px 0;
+}
+
+.container_1 .information .experience .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .experience .box-container .box {
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 350px;
+    background: var(--light-bg);
+}
+
+.container_1 .information .experience .box-container .box span {
+    color: var(--blue);
+    font-size: 15px;
+}
+
+.container_1 .information .experience .box-container .box h3 {
+    color: var(--black);
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.container_1 .information .experience .box-container .box p {
+    color: var(--light-color);
+    line-height: 2;
+    font-size: 13px;
+}
+
+/* contact */
+
+.container_1 .information .contact .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .contact .box-container .box {
+    flex: 1 1 500px;
+    display: flex;
+    align-self: flex-start;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.container_1 .information .contact .box-container .box svg {
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container_1 .information .contact .box-container .box h3 {
+    font-size: 17px;
+    color: var(--black);
+    padding-bottom: 5px;
+}
+
+.container_1 .information .contact .box-container .box p {
+    font-size: 14px;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* Work */
+
+.container_1 .information .work {
+    margin: 20px 0;
+}
+
+.container_1 .information .work .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .work .box-container .box {
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 350px;
+    background: var(--light-bg);
+}
+
+.container_1 .information .work .box-container .box span {
+    color: var(--blue);
+    font-size: 15px;
+}
+
+.container_1 .information .work .box-container .box h3 {
+    color: var(--black);
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.container_1 .information .work .box-container .box p {
+    color: var(--light-color);
+    line-height: 2;
+    font-size: 13px;
+}
+
+/* hobbies */
+
+.container_1 .information .hobbies {
+    margin: 20px 0;
+}
+
+.container_1 .information .hobbies .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .hobbies .box-container .box {
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 350px;
+    background: var(--light-bg);
+}
+
+.container_1 .information .hobbies .box-container .box span {
+    color: var(--blue);
+    font-size: 15px;
+}
+
+.container_1 .information .hobbies .box-container .box h3 {
+    color: var(--black);
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.container_1 .information .hobbies .box-container .box p {
+    color: var(--light-color);
+    line-height: 2;
+    font-size: 13px;
+}
+
+/* skills */
+
+.container_1 .information .skills {
+    margin: 20px 0;
+}
+
+.container_1 .information .skills .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container_1 .information .skills .box-container .box {
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 350px;
+    background: var(--light-bg);
+}
+
+.container_1 .information .skills .box-container .box span {
+    color: var(--blue);
+    font-size: 15px;
+}
+
+.container_1 .information .skills .box-container .box h3 {
+    color: var(--black);
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.container_1 .information .skills .box-container .box p {
+    color: var(--light-color);
+    line-height: 2;
+    font-size: 13px;
 }

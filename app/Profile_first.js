@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Profile_first() {
   return (
     <div className="describe">
-      <Image src={`/assets/profile.jpg`} width="500" height="500" className='image' />
+      <Image src={`/Pakcawat-Resume/assets/profile.jpg`} width="500" height="500" className='image' />
 
 
 
@@ -18,9 +18,9 @@ export default function Profile_first() {
           <path fill-rule="evenodd" d="M1.756 4.568A1.5 1.5 0 0 0 1 5.871V12.5A1.5 1.5 0 0 0 2.5 14h11a1.5 1.5 0 0 0 1.5-1.5V5.87a1.5 1.5 0 0 0-.756-1.302l-5.5-3.143a1.5 1.5 0 0 0-1.488 0l-5.5 3.143Zm1.82 2.963a.75.75 0 0 0-.653 1.35l4.1 1.98a2.25 2.25 0 0 0 1.955 0l4.1-1.98a.75.75 0 1 0-.653-1.35L8.326 9.51a.75.75 0 0 1-.652 0L3.575 7.53Z" clip-rule="evenodd" />
         </svg><a href="mailto:pakcawat.iss@gmail.com" >
             pakcawat.iss@gmail.com</a></div>
-        <a href="https://github.com/Pakcawat" ><Image src={`/assets/Github.png`} width="500" height="500" className='github' />
+        <a href="https://github.com/Pakcawat" ><Image src={`/Pakcawat-Resume/assets/Github.png`} width="500" height="500" className='github' />
         </a>
-        <a href="https://line.me/ti/p/5ovO1GsjEE"><Image src={`/assets/LINE.png`} width="500" height="500" className='line' /></a>
+        <a href="https://line.me/ti/p/5ovO1GsjEE"><Image src={`/Pakcawat-Resume/assets/LINE.png`} width="500" height="500" className='line' /></a>
       </div>
 
     </div>

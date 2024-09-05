@@ -7,6 +7,7 @@ import Contact from './Contact.js'
 import Work from './Work.js'
 import Hobbies from './Hobbies.js'
 import Skills from './Skills.js'
+import App from "./App.js";
 
 
 export default function Home() {
@@ -18,13 +19,15 @@ export default function Home() {
         <div className="information ">
 
           <About />
-          <Skills /> 
+          <Skills />
           <Work />
           <Experience />
           <Hobbies />
           <Contact />
+
         </div>
       </div>
+
     </main>
   );
 }

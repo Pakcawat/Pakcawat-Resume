@@ -12,8 +12,7 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-resume": "file:",
-    "swiper": "^11.1.9"
+    "react-resume": "file:"
   },
   "devDependencies": {
     "postcss": "^8",

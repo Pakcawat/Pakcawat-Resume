@@ -12,12 +12,12 @@ export default function About() {
             <div className="box-container">
                 <div className="box">
                     <h3> <span>Age : </span> 24 </h3>
-                    <h3> <span> Address : </span> Rangsit Khlong 3 ,Pathum Thani 12150 </h3>
-                    <h3> <span> Number : </span> 061-836-8168 </h3>
+                    <h3> <span> Address : </span> Rangsit Khlong 3, Pathum Thani 12150 </h3>
+                    <h3> <span> Tel : </span> 061-836-8168 </h3>
                     <h3> <span> Email : </span> pakcawat.iss@gmail.com </h3>
                 </div>
                 <div className="box">
-                    <h3> <span> Language : </span> thai, english </h3>
+                    <h3> <span> Language : </span> Thai, English </h3>
                     <h3> <span> Toeic score : </span> 625 </h3>
                     <h3> <span> GPA : </span> 2.94 </h3>
                 </div>

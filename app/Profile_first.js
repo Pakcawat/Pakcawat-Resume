@@ -1,7 +1,4 @@
 import Image from 'next/image'
-// https://pakcawat.github.io/Pakcawat-Resume/assets/profile.jpg
-// https://pakcawat.github.io/Pakcawat-Resume/assets/Github.png
-// https://pakcawat.github.io/Pakcawat-Resume/assets/LINE.png
 
 export default function Profile_first() {
   return (
